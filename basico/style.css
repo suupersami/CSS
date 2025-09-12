@@ -1,0 +1,48 @@
+/*
+es un comentario de CSS
+*/
+body{
+    background-color: #FFEAAB;
+}
+header{
+    background-color:#FFDF7E;
+}
+main{
+    background-color:#FFEAAB;
+}
+section{
+    p {
+        color: darkcyan;
+    }
+}
+
+h1{
+    color:#E9B10A;
+    text-decoration: underline; /*permite decorar el texto,en este caso subrayado */
+    text-align: center;
+    font-size: 2.8em; /*tamaño de la fuente*/
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;/*estilos de fuente*/
+    font-weight: 100;
+}
+span{
+    color: rgb(255, 127, 244);
+}
+h2{
+    color: #FFCD38;
+    background-color: antiquewhite;
+    font-size: 1.5em;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-weight: 500;
+}
+/*utilizo,un selector por id,es decir,nombrando un el id del elemento particular que quiero que se cambie el diseño*/
+#titulo-sec{
+    color: rgb(200, 51, 245);
+}
+
+/*para seleccionar elementos de html que deban tener las MISMAS propiedades debemos usar clases,las clases se 
+identifican en CSS con un (.)*/
+.mismo-color{
+    color: rgb(252, 167, 70);
+}
