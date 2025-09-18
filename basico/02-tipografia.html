@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conceptos de CSS:tipografia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumar+One+Outline&family=Oi&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Kumar+One+Outline&family=Oi&display=swap"
+        rel="stylesheet">
+    <style>
+        /*elegir un color de fondo y aplicarlo a la pagina*/
+        body {
+            background-color: #C474A6;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+        }
+
+        /*Color de letra para el titulo principal*/
+        h1 {
+            font-family: "Kumar One Outline", system-ui;
+            color: #4B002F;
+        }
+
+        /*color de fondo para el header*/
+        header {
+            background-color: #A44581;
+        }
+
+        .fuente-principal {
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .fuente-secundaria {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .tam-px {
+            font-size: 18px;
+        }
+
+        .tam-em {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-size: 1.9em;
+        }
+
+        .fuente-grosor-normal {
+            font-weight: 400;
+        }
+
+        .fuente-grosor-max {
+            font-weight: 900;
+        }
+
+        .fuente-grosor-debil {
+            font-weight: 100;
+        }
+
+        .fuente-prueba-grosor {
+            font-size: 2.1em;
+        }
+
+        .fuente-estilo {
+            font-style: italic;
+        }
+
+        .interlineado-peque {
+            line-height: 1;
+        }
+
+        .interlineado-normal {
+            line-height: 1.6;
+        }
+
+        .interlineado-grande {
+            line-height: 2.6;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Ejemplos de tipografia en CSS</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Tipo de fuente:font-family</h2>
+            <p class="fuente-principal">
+                Este párrafo usa la fuente:Courier New, Courier, monospace
+            </p>
+            <p class="fuente-secundaria">
+                Este párrafo usa la fuente:Georgia, 'Times New Roman', Times, serif
+            </p>
+        </section>
+        <section>
+            <h2>Tamaño de fuente:font-size</h2>
+            <p class="tam-px">Texto en 18px (pixeles)</p>
+            <p class="tam-em">Texto en 1.8em </p>
+        </section>
+        <section>
+            <h2>Grosor de Fuente</h2>
+            <p class="fuente-grosor-normal fuente-prueba-grosor">
+                Párrafo normal
+            </p>
+            <p class="fuente-grosor-max fuente-prueba-grosor">
+                Párrafo grosor maximo
+            </p>
+            <p class="fuente-grosor-debil fuente-prueba-grosor">
+                Párrafo grosor debil
+            </p>
+            <p class="fuente-estilo">
+                aplicamos font-style
+            </p>
+        </section>
+        <section>
+            <h2>Altura de linea (interlineado):line-height</h2>
+            <p class="interlineado-peque">
+                Este texto tiene interlineado pequeño. Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Magnam sit quos natus numquam est,
+                eveniet quod cumque ex velit pariatur recusandae qui aliquam ea. Ipsum modi voluptatum eveniet sapiente
+                consequatur?
+            </p>
+            <p class="interlineado-normal">
+                Este texto tiene interlineado normal. Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda
+                ex repellendus
+                veritatis doloremque magni! Voluptas molestiae ea alias incidunt assumenda sint doloremque, sequi
+                deserunt molestias,
+                impedit, perferendis recusandae distinctio temporibus.
+            </p>
+            <p class="interlineado-grande">
+                Este texto tiene interlineado grande. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt
+                itaque enim
+                praesentium ipsam, ducimus autem? Quisquam aut quaerat repudiandae numquam quibusdam! Architecto nulla,
+                quas eligendi nemo doloremque delectus nam saepe.
+            </p>
+        </section>
+    </main>
+
+</body>
+
+</html>
