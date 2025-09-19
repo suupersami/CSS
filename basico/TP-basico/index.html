@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Personal</title>
+    <link rel="stylesheet" href="perfil.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div><img src="../TP-basico/assets/sandro2.webp" alt="logo sandro" width="250px"></div>
+        <h2>"Roberto Sánchez Ocampo" <span>Sandro</span></h2>
+        <p class="parrafo-italico">Cantante y actor Argentino</p>
+
+    </header>
+    <main>
+        <section>
+            <h3>Acerca de el</h3>
+            <p class="texto-justificado">
+                Fue un cantante y actor nacido el 19 de Agosto de 1945 y fallecido el 4 de enero de 2010 a los 64
+                años
+                ;Hijo
+                unico de
+                Vicente Sánchez e Irma Nydia Ocampo, ambos españoles.
+                Como intérprete destaco en los géneros de canción melódica, rock and roll, balada romántica y pop.
+                Publicó cincuenta y dos álbumes originales y vendió al menos ocho millones de copias.
+                Algunos de sus mayores éxitos son: <em>«Dame el fuego de tu amor»</em>, <em>«Rosa Rosa»</em>,
+                <em>«Quiero llenarme de ti»</em>,
+                <em>«Penumbras»</em>,
+                <em>«Porque yo te amo»</em>, <em>«Así»</em>, <em>«Mi amigo el Puma»</em>, <em>«Tengo»</em>,
+                <em>«Trigal»</em> y <em>«Una muchacha y una guitarra»</em>.
+                Su obra más famosa, <em>«Rosa Rosa»</em>, vendió dos millones de discos. Asimismo, su tema
+                <em>«Tengo»</em> fue
+                considerado
+                por la revista Rolling Stone y
+                la cadena televisiva MTV como el n.º 15 entre los 100 mejores temas del rock argentino.
+            </p>
+            <div class="lista">
+
+                <ul>
+                    <li>
+                        <Strong>Email</Strong>:Sandro@gmail.com
+                    </li>
+                    <li>
+                        <strong>Ubicación Contacto</strong>:Buenos Aires-Argentina
+                    </li>
+                    <li>
+                        <strong>Experiencia de Sandro como cantante</strong>:48 años
+                    </li>
+                </ul>
+
+            </div>
+        </section>
+        <section>
+            <form action="" method="post">
+                <legend>contacto con la familia de Sandro</legend>
+
+                <label class="nombre2" for="nombre">Nombre completo</label>
+                <div>
+                    <input class="input" type="text" placeholder="Escribe tu nombre completo" id="nombre" required>
+                </div>
+
+                <label class="nombre2" for="email">Correo Electronico</label>
+                <div>
+                    <input class="input" type="email" placeholder="ejemplo@correo.com" id="email" required>
+                </div>
+
+                <label class="nombre2" for="password">Contraseña</label>
+                <div>
+                    <input class="input" type="password" placeholder="◾◾◾◾◾◾◾" id="password" required>
+                </div>
+                <label class="nombre2" for="telefono">Teléfono</label>
+                <div>
+                    <input class="input" type="number" id="telefono" min="0">
+                </div>
+                <label class="nombre2" for="provincias">Provincia</label>
+                <div>
+                    <select class="input" name="provincias" id="pronvicias">
+                        <option value="Seleccione">Selecciona un país</option>
+                        <option value="Buenos Aires">Buenos Aires</option>
+                        <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                        <option value="Catamarca">Catamarca</option>
+                        <option value="Chaco">Chaco</option>
+                        <option value="Chubut">Chubut</option>
+                        <option value="Córdoba">Córdoba</option>
+                        <option value="Corrientes">Corrientes</option>
+                        <option value="Entre Ríos">Entre Ríos</option>
+                        <option value="Formosa">Formosa</option>
+                        <option value="Jujuy">Jujuy</option>
+                        <option value="La Pampa">La Pampa</option>
+                        <option value="La Rioja">La Rioja</option>
+                        <option value="Mendoza">Mendoza</option>
+                        <option value="Misiones">Misiones</option>
+                        <option value="Neuquén">Neuquén</option>
+                        <option value="Río Negro">Río Negro</option>
+                        <option value="Salta">Salta</option>
+                        <option value="San Juan">San Juan</option>
+                        <option value="San Luis">San Luis</option>
+                        <option value="Santa Cruz">Santa Cruz</option>
+                        <option value="Santa Fe">Santa Fe</option>
+                        <option value="Santiago del Estero">Santiago del Estero</option>
+                        <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego,
+                            Antártida e
+                            Islas del Atlántico Sur</option>
+                        <option value="Tucumán">Tucumán</option>
+                    </select>
+                </div>
+                <label class="nombre2" for="comentario">Intereses (opcional)</label>
+                <div>
+                    <textarea name="comentario" id="comentario" cols="40" rows="3"
+                        placeholder="Cuéntanos por que te interesa Sandro..."></textarea>
+                </div>
+                    <label for="acepto">Acepto terminos y condiciones</label>
+                <div>
+                    <input type="checkbox" id="acepto" required>
+                </div>
+
+                <div class="linea" >
+                    <!--button crea un boton-->
+                    <button id="btn-contacto" type="submit" class="boton">Contactar</button>
+                    <button id="btn-portafolio" type="submit" class="boton">Portafolio</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

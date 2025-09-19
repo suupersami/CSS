@@ -1,0 +1,81 @@
+body{
+    background-color:#FFCDBC;
+    font-family: "Quicksand", sans-serif;
+}
+main{
+    padding:40px;
+    width:450px;
+    margin: 0 auto; /*aplica un margen 0 al top y al bottom auto es acomodar
+     automaticamente el espacio que me queda entre la caja de 450 px y el resto de la pantalla*/
+}
+img{
+    border: 3.5px solid #41000A;
+    border-radius:100%;
+}
+header{
+    border-bottom:2px solid red;
+    text-align: center;
+}
+span{
+    font-family: "Monsieur La Doulaise", cursive;
+    font-weight: 500;
+    font-size:3em;
+    color: #6C0011;
+}
+
+.parrafo-italico{
+    text-align: center;
+    font-style: italic;
+}
+.texto-justificado{
+    line-height:1.7;
+    padding:15px;
+    background-color:#fd7e7e;
+    text-align: justify;
+    border-radius:20px;
+}
+.lista{
+    border: 2px solid #f8695f;
+    background-color:#FAA97E ;
+    border-radius:30px;
+}
+ul{
+    list-style: none;
+}
+.nombre2{
+    color:#103755;
+}
+.input{
+    background-color:#FAA97E;
+    border-radius: 30px;
+    width:100%;
+    padding:8px;
+    /*otra forma de hacerlo,seleccionando a que tipo
+    input[type="text],input[type="email"],input[type="number"]{
+    }*/
+}
+textarea{
+    width:100%; /*width es el ancho de un elemento,si coloco 100% ocupara todo el espacio a lo ancho disponible*/
+    background-color:#FAA97E;
+    border-radius: 10px;
+    padding:6px;
+}
+
+#btn-contacto{
+    background-color: rgb(76, 76, 236);
+}
+#btn-portafolio{
+    background-color: rgb(218, 28, 28);
+}
+.boton{
+    color: ghostwhite;
+    padding: 7px;
+ border-radius: 8px;
+ font-weight: 700;
+}
+.linea{
+    padding:10px;
+    border-top:2px dashed red;
+}
+
+
