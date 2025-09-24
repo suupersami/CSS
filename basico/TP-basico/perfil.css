@@ -1,37 +1,40 @@
-body{
-    background-color:#FFCDBC;
-    font-family: "Quicksand", sans-serif;
+body{/*llamamos a la etiqueta "body" para agregarle estilo*/
+    background-color:#FFCDBC; /*la etiqueta "background-color" permite darle un color de fondo a la etiqueta que se la estamos aplicando,
+    en este caso body;le elegimos un color RGB y mediante el "#" va aparecer*/
+    font-family: "Quicksand", sans-serif;/*font-family es una etiqueta que nos va a permitir ponerle cierto tipo de fuente al texto*/
 }
 main{
-    padding:40px;
-    width:450px;
-    margin: 0 auto; /*aplica un margen 0 al top y al bottom auto es acomodar
+    padding:40px;/*padding es una etiqueta que le da un espacio al elemento que se lo estamos poniendo,puede ir en px o en %*/
+    width:450px;/*width la etiqueta que le da anchura al elemento deseado*/
+    margin: 0 auto ; /*aplica un margen 0 al top y al bottom,auto es acomodar
      automaticamente el espacio que me queda entre la caja de 450 px y el resto de la pantalla*/
+     box-shadow:0px 3px 22px 9px #B7868D;/*box-shadow no va a dar la sombra del elemnto deseado,dando cierta sensacion a la pagina web*/
+     border-radius:3%;/*le da un borde redondeado al elemento para que no quede cuadrado*/
 }
 img{
-    border: 3.5px solid #41000A;
+    border: 3.5px solid #41000A;/*border le da un borde al elemento,solid es un atributo que indica que la linea es continua y luego el color*/
     border-radius:100%;
 }
 header{
-    border-bottom:2px solid red;
-    text-align: center;
+    border-bottom:2px solid red;/*border-bottom es una etiqueta que le da un borde a la parte que elegimos,en esta ocacion la parte de abajo del elemento (bottom)*/
+    text-align: center;/*text-align alinea el contenido del elemento a donde queramos,en este caso al centro(center)*/
 }
 span{
     font-family: "Monsieur La Doulaise", cursive;
-    font-weight: 500;
-    font-size:3em;
-    color: #6C0011;
+    font-weight: 500;/*font-weight nos permite darle un ancho diferente al texto que tenga el elemento*/
+    font-size:3em;/*font-size nos permite cambiar el tamaño al texto*/
+    color: #6C0011;/*color nos permite poner un color al texto*/
 }
 
 .parrafo-italico{
     text-align: center;
-    font-style: italic;
+    font-style: italic;/*font-style nos permite darle un estilo al texto,en este caso (italic)*/
 }
 .texto-justificado{
-    line-height:1.7;
+    line-height:1.7;/*line-height le da un espacio a cada reglon del texto*/
     padding:15px;
     background-color:#fd7e7e;
-    text-align: justify;
+    text-align: justify;/*text-align:justify permite que el texto sea seguido,sin que queden los espacios no deseados*/
     border-radius:20px;
 }
 .lista{
@@ -40,22 +43,22 @@ span{
     border-radius:30px;
 }
 ul{
-    list-style: none;
+    list-style: none;/*una lista por defecto tiene estilos,con list-style podemos agregarle o en este caso quitarle (none)*/ 
 }
 .nombre2{
     color:#103755;
 }
-.input{
+.input1{
     background-color:#FAA97E;
     border-radius: 30px;
-    width:100%;
+    width:95%;
     padding:8px;
     /*otra forma de hacerlo,seleccionando a que tipo
     input[type="text],input[type="email"],input[type="number"]{
     }*/
 }
 textarea{
-    width:100%; /*width es el ancho de un elemento,si coloco 100% ocupara todo el espacio a lo ancho disponible*/
+    width:430px; /*width es el ancho de un elemento,si coloco 100% ocupara todo el espacio a lo ancho disponible*/
     background-color:#FAA97E;
     border-radius: 10px;
     padding:6px;
@@ -75,7 +78,21 @@ textarea{
 }
 .linea{
     padding:10px;
-    border-top:2px dashed red;
+    border-top:2px dashed red;/*con la etiqueta border-top ponemos una linea arriba*/
+}
+.provincias{
+    background-color:#FAA97E;
+    border-radius: 30px;
+    width:445px;
+    padding:8px;
+}
+fieldset{
+    border:#FFCDBC;
+}
+.legend-titulo{
+    font-family: "EB Garamond", serif;
+    color: #41000A;
+    font-size:2em;
 }
 
 

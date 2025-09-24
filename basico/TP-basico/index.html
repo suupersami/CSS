@@ -4,27 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Perfil Personal</title>
-    <link rel="stylesheet" href="perfil.css">
+    <title>Perfil Personal</title><!--Cambio de nombre de la página-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+
+    <!--Estos links son los que te da google Fonts para 
+    poder utilizar la fuente deseada-->
+    <link rel="stylesheet" href="perfil.css">
+    <!--Vinculo al archivo css del programa mediante la etiqueta link,se vincula atreves del atributo href-->
 </head>
 
 <body>
-    <header>
-        <div><img src="../TP-basico/assets/sandro2.webp" alt="logo sandro" width="250px"></div>
-        <h2>"Roberto Sánchez Ocampo" <span>Sandro</span></h2>
-        <p class="parrafo-italico">Cantante y actor Argentino</p>
+    <header><!--Colocamos header para empezar a dividir las partes de nuestra pagina web (encabezado)-->
+        <div><img src="../TP-basico/assets/sandro3.png" alt="logo sandro" width="250px"></div>
+        <!--Colocamos el logo de la pagina con la etiqueta
+        "img" dentro de un div para que luego si le ponemos estilo quede abjo y mediante el atributo width ponemos el ancho deseado-->
+        <h2>"Roberto Sánchez Ocampo" <span>Sandro</span></h2><!--colocamos un titulo con la etiqueta h2 (tambien pudo haber sido h1) y con la etiqueta
+        "span" separamos la palabra que deseemos que sea diferente al titulo al ponerle estilos-->
+        <p class="parrafo-italico">Cantante y actor Argentino</p><!--abajo colocamos un parrafo con la etiqueta "p" y le colocamos una clase con la 
+        etiqueta "class" para luego en los estilos ponerle una fuente diferente al resto de los demas parrafos-->
 
     </header>
-    <main>
-        <section>
-            <h3>Acerca de el</h3>
+    <main><!--(contenido principal pagina web)-->
+        <section><!--Seccion 1-->
+            <h3>Acerca de el</h3><!--Colocamos otro titulo pero ahora con h3 ya que tiene menos importancia-->
             <p class="texto-justificado">
+                <!--A este parrafo le colocamos una clase distinta al parrafo anterior por que no van a compartir estilos-->
                 Fue un cantante y actor nacido el 19 de Agosto de 1945 y fallecido el 4 de enero de 2010 a los 64
                 años
                 ;Hijo
@@ -32,7 +45,8 @@
                 Vicente Sánchez e Irma Nydia Ocampo, ambos españoles.
                 Como intérprete destaco en los géneros de canción melódica, rock and roll, balada romántica y pop.
                 Publicó cincuenta y dos álbumes originales y vendió al menos ocho millones de copias.
-                Algunos de sus mayores éxitos son: <em>«Dame el fuego de tu amor»</em>, <em>«Rosa Rosa»</em>,
+                Algunos de sus mayores éxitos son: <em>«Dame el fuego de tu amor»</em>, <em>«Rosa Rosa»</em>, <!--Colocamos la etiqueta "em" para dar enfasis a una palabra 
+                o frase-->
                 <em>«Quiero llenarme de ti»</em>,
                 <em>«Penumbras»</em>,
                 <em>«Porque yo te amo»</em>, <em>«Así»</em>, <em>«Mi amigo el Puma»</em>, <em>«Tengo»</em>,
@@ -44,10 +58,11 @@
                 la cadena televisiva MTV como el n.º 15 entre los 100 mejores temas del rock argentino.
             </p>
             <div class="lista">
+                <!--colocamos un div para que quede abajo de nuestra introduccion y le ponemos una clase para darle una cualidad distinta en los estilos-->
 
-                <ul>
-                    <li>
-                        <Strong>Email</Strong>:Sandro@gmail.com
+                <ul><!--Etiqueta de lista desordenada-->
+                    <li><!--etiqueta de elemento de la lista-->
+                        <Strong>Email</Strong>:Sandro@gmail.com <!--"strong"-->
                     </li>
                     <li>
                         <strong>Ubicación Contacto</strong>:Buenos Aires-Argentina
@@ -59,75 +74,88 @@
 
             </div>
         </section>
-        <section>
+        <section><!--segunda seccion-->
             <form action="" method="post">
-                <legend>contacto con la familia de Sandro</legend>
+                <!--abrimos un formulario por si el usuario quiere contactarse con la pagina web-->
+                <fieldset><!--para agrupar elementos en el formulario-->
+                    <legend class="legend-titulo">Contacto con la familia de Sandro</legend>
+                    <!--etiqueta para poner un titulo a la etiqueta fieldset-->
 
-                <label class="nombre2" for="nombre">Nombre completo</label>
-                <div>
-                    <input class="input" type="text" placeholder="Escribe tu nombre completo" id="nombre" required>
-                </div>
+                    <label class="nombre2" for="nombre">Nombre completo</label>
+                    <!--"label" etiqueta que vincula a la etiqueta input mediante el id (identificador) del mismo. -->
+                    <div>
+                        <input class="input1" type="text" placeholder="Escribe tu nombre completo" id="nombre" required><!--la etiqueta input le permite al usuario poder ingresar
+                        texto,numeros,fechas y emails,tiene los atributos de name=nombre,value=valor e id-->
+                    </div>
 
-                <label class="nombre2" for="email">Correo Electronico</label>
-                <div>
-                    <input class="input" type="email" placeholder="ejemplo@correo.com" id="email" required>
-                </div>
+                    <label class="nombre2" for="email">Correo Electronico</label>
+                    <div>
+                        <input class="input1" type="email" placeholder="ejemplo@correo.com" id="email" required><!--required es una etiqueta que le informa al usuario que
+                        debe rellenar si o si ese parametro para enviar el formulario-->
+                    </div>
 
-                <label class="nombre2" for="password">Contraseña</label>
-                <div>
-                    <input class="input" type="password" placeholder="◾◾◾◾◾◾◾" id="password" required>
-                </div>
-                <label class="nombre2" for="telefono">Teléfono</label>
-                <div>
-                    <input class="input" type="number" id="telefono" min="0">
-                </div>
-                <label class="nombre2" for="provincias">Provincia</label>
-                <div>
-                    <select class="input" name="provincias" id="pronvicias">
-                        <option value="Seleccione">Selecciona un país</option>
-                        <option value="Buenos Aires">Buenos Aires</option>
-                        <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
-                        <option value="Catamarca">Catamarca</option>
-                        <option value="Chaco">Chaco</option>
-                        <option value="Chubut">Chubut</option>
-                        <option value="Córdoba">Córdoba</option>
-                        <option value="Corrientes">Corrientes</option>
-                        <option value="Entre Ríos">Entre Ríos</option>
-                        <option value="Formosa">Formosa</option>
-                        <option value="Jujuy">Jujuy</option>
-                        <option value="La Pampa">La Pampa</option>
-                        <option value="La Rioja">La Rioja</option>
-                        <option value="Mendoza">Mendoza</option>
-                        <option value="Misiones">Misiones</option>
-                        <option value="Neuquén">Neuquén</option>
-                        <option value="Río Negro">Río Negro</option>
-                        <option value="Salta">Salta</option>
-                        <option value="San Juan">San Juan</option>
-                        <option value="San Luis">San Luis</option>
-                        <option value="Santa Cruz">Santa Cruz</option>
-                        <option value="Santa Fe">Santa Fe</option>
-                        <option value="Santiago del Estero">Santiago del Estero</option>
-                        <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego,
-                            Antártida e
-                            Islas del Atlántico Sur</option>
-                        <option value="Tucumán">Tucumán</option>
-                    </select>
-                </div>
-                <label class="nombre2" for="comentario">Intereses (opcional)</label>
-                <div>
-                    <textarea name="comentario" id="comentario" cols="40" rows="3"
-                        placeholder="Cuéntanos por que te interesa Sandro..."></textarea>
-                </div>
+                    <label class="nombre2" for="password">Contraseña</label>
+                    <div>
+                        <input class="input1" type="password" placeholder="◾◾◾◾◾◾◾" id="password" required> <!--"placeholder" es una etiqueta que nos permite poner texto
+                        a dentro del input,este mismo aparecera de un color distinto y menos visible-->
+                    </div>
+                    <label class="nombre2" for="telefono">Teléfono</label>
+                    <div>
+                        <input class="input1" type="number" id="telefono" min="0">
+                    </div>
+                    <label class="nombre2" for="provincias">Provincia</label>
+                    <div>
+                        <select class="provincias" name="provincias" id="pronvicias"> <!--"select" etiqueta que se despliega y da opciones para eligir al usuario mediante 
+                            las etiquetas "option"-->
+                            <option value="Seleccione">Selecciona una provincia</option>
+                            <!--"value" es la etiqueta que le da un valor a cierta etiqueta-->
+                            <option value="Buenos Aires">Buenos Aires</option>
+                            <option value="Ciudad Autónoma de Buenos Aires">Ciudad Autónoma de Buenos Aires</option>
+                            <option value="Catamarca">Catamarca</option>
+                            <option value="Chaco">Chaco</option>
+                            <option value="Chubut">Chubut</option>
+                            <option value="Córdoba">Córdoba</option>
+                            <option value="Corrientes">Corrientes</option>
+                            <option value="Entre Ríos">Entre Ríos</option>
+                            <option value="Formosa">Formosa</option>
+                            <option value="Jujuy">Jujuy</option>
+                            <option value="La Pampa">La Pampa</option>
+                            <option value="La Rioja">La Rioja</option>
+                            <option value="Mendoza">Mendoza</option>
+                            <option value="Misiones">Misiones</option>
+                            <option value="Neuquén">Neuquén</option>
+                            <option value="Río Negro">Río Negro</option>
+                            <option value="Salta">Salta</option>
+                            <option value="San Juan">San Juan</option>
+                            <option value="San Luis">San Luis</option>
+                            <option value="Santa Cruz">Santa Cruz</option>
+                            <option value="Santa Fe">Santa Fe</option>
+                            <option value="Santiago del Estero">Santiago del Estero</option>
+                            <option value="Tierra del Fuego, Antártida e Islas del Atlántico Sur">Tierra del Fuego,
+                                Antártida e
+                                Islas del Atlántico Sur</option>
+                            <option value="Tucumán">Tucumán</option>
+                        </select>
+                    </div>
+                    <label class="nombre2" for="comentario">Intereses (opcional)</label>
+                    <div>
+                        <textarea name="comentario" id="comentario" cols="40" rows="3"
+                            placeholder="Cuéntanos por que te interesa Sandro..."></textarea>
+                        <!--la etiqueta textarea se utiliza cuando el usuario tiene que escribir mucho texto
+                            (como comentario) los atributos "rows" y "cols" defininen cuantas columnas y filas de largo va a tener ese espacio-->
+                    </div>
                     <label for="acepto">Acepto terminos y condiciones</label>
-                <div>
-                    <input type="checkbox" id="acepto" required>
-                </div>
+                    <div>
+                        <input type="checkbox" id="acepto" required> <!--checkbox es un tipo de input que te permite generar una "caja" que podes presionar,generalmente se 
+                        utiliza para poder elegir mas de una opcion-->
+                    </div>
 
-                <div class="linea" >
-                    <!--button crea un boton-->
-                    <button id="btn-contacto" type="submit" class="boton">Contactar</button>
-                    <button id="btn-portafolio" type="submit" class="boton">Portafolio</button>
-                </div>
+                    <div class="linea">
+                        <!--"button" crea un boton para poder enviar el formulario-->
+                        <button id="btn-contacto" type="submit" class="boton">Contactar</button>
+                        <button id="btn-portafolio" type="submit" class="boton">Portafolio</button>
+                    </div>
+                </fieldset>
             </form>
         </section>
     </main>
