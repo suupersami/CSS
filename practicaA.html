@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica A de Flexbox</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zalando+Sans+SemiExpanded:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background: #ffd269;
+            background: linear-gradient(163deg, rgba(255, 210, 105, 1) 17%, rgba(252, 70, 107, 1) 100%);
+            font-family: "Zalando Sans SemiExpanded", sans-serif;
+            text-transform: uppercase;/*pone las letras en mayuscula*/
+            font-weight: 600;
+        }/*main*/
+        .contenedor{
+            display: flex;
+            justify-content:space-around; /* alineacion horizontal de los item flex*/
+            background-color: ghostwhite;
+            gap:15px;
+            padding:10px;
+        }
+        .contenedor section{
+            width:200px;
+            display: flex;
+            align-items: center;
+            gap: 15px; /*gap separa los hermanos de un container flex (debe estar en display flex*/
+        }
+        .item-img{
+            width:50px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <main class="contenedor"><!--contenedor flex-->
+        <section><!--Contiene contenido relacionado con el envio ,item flex 1,contenedot-->
+            <img class="item-img" src="/assets/camion.png" alt="logo envio">
+            <p>
+                envíos a todo el pais y retiro por sucursales andreani
+            </p>
+        </section>
+        <section><!--Contiene contenido relacionado con el pago, item flex 2,contenedor-->
+        
+                <img class="item-img" src="/assets/tarjeta-nfc.png" alt="logo pago">
+                <p>
+                    pagá con 2 tarjetas de credito o debito
+                </p>
+            
+        </section>
+        <section><!--Contiene contenido relacionado con la ubicacion,item flex 3,contenedor-->
+            
+                <img class="item-img" src="/assets/ubicacion.png" alt="logo ubicacion">
+
+                <p>retirá gratis en 2 horas en nuestros flagship stores</p>
+        </section>
+    </main>
+
+</body>
+
+</html>
